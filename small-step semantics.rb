@@ -1,3 +1,9 @@
+RubyVM::InstructionSequence.compile_option = { 
+    tailcall_optimization: true, 
+    trace_instruction: false
+}
+
+
 class Number < Struct.new(:value)
     def to_s
         value.to_s
