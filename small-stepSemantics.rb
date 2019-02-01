@@ -1,8 +1,7 @@
-RubyVM::InstructionSequence.compile_option = { 
-    tailcall_optimization: true, 
-    trace_instruction: false
-}
-
+# RubyVM::InstructionSequence.compile_option = { 
+#     tailcall_optimization: true, 
+#     trace_instruction: false
+# }
 
 class Number < Struct.new(:value)
     def to_s
@@ -249,9 +248,9 @@ class Machine < Struct.new(:st,:env)
     end 
 end 
 
-Machine.new(
-    While.new(
-        LessThan.new(Variable.new(:x), Number.new(5)), 
-        Assign.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))), 
-        { x: Number.new(1) }
-).run
+# Machine.new(
+#     While.new(
+#         LessThan.new(Variable.new(:x), Number.new(5)), 
+#         Assign.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))), 
+#         { x: Number.new(1) }
+# ).run
