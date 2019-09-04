@@ -88,10 +88,11 @@ class While
     end
 end 
 
-statement = While.new(
-    LessThan.new(Variable.new(:x), Number.new(5)), 
-    Assign.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))
-)
 
-puts statement.evaluate({:x => Number.new(1)})
+# statement = While.new(
+#     LessThan.new(Variable.new(:x), Number.new(5)), 
+#     Assign.new(:x, Multiply.new(Variable.new(:x), Number.new(4)))
+# )
+
+# puts statement.evaluate({:x => Number.new(1)})
 
